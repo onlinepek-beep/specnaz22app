@@ -39,11 +39,11 @@ function applyPermissions(role, permissions) {
         if (first) openPage(first.dataset.page);
     }
 
-    const profileName = document.querySelector(".profile-name");
     const profileRole = document.querySelector(".profile-role");
 
-    if (profileRole) profileRole.textContent = roleNames[role] || "Пользователь";
-    if (profileName) profileName.textContent = "Пользователь";
+    if (profileRole) {
+        profileRole.textContent = roleNames[role] || "Пользователь";
+    }
 }
 
 async function loadCurrentUser() {
