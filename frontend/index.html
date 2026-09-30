@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0D0D0D">
+<title>Спецназ 22</title>
+<link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+<div class="sidebar-brand"><div class="brand">Спецназ 22</div><div class="subtitle">Учёт производства</div></div>
+<nav class="navigation">
+<button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span class="nav-text">Главная</span></button>
+<button class="nav-item" data-page="production"><span class="nav-icon">＋</span><span class="nav-text">Производство</span></button>
+<button class="nav-item" data-page="products"><span class="nav-icon">▦</span><span class="nav-text">Изделия</span></button>
+<button class="nav-item" data-page="history"><span class="nav-icon">◷</span><span class="nav-text">История</span></button>
+<button class="nav-item" data-page="operators"><span class="nav-icon">●</span><span class="nav-text">Операторы</span></button>
+<button class="nav-item" data-page="salary"><span class="nav-icon">₽</span><span class="nav-text">Зарплата</span></button>
+<button class="nav-item" data-page="analytics"><span class="nav-icon">▥</span><span class="nav-text">Аналитика</span></button>
+<button class="nav-item" data-page="audit"><span class="nav-icon">≡</span><span class="nav-text">Журнал изменений</span></button>
+<button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span><span class="nav-text">Настройки</span></button>
+<button class="nav-item" data-page="profile"><span class="nav-icon">●</span><span class="nav-text">Профиль</span></button>
+</nav>
+<button class="theme-button" type="button">☀</button>
+</aside>
+<main class="content">
+<section class="page active" id="page-home">
+<div class="page-header"><h1>Главная</h1><p>Сегодня · 30 сентября</p></div>
+<div class="main-card">
+<div class="card-title">Производство</div>
+<div class="production-number">1 240</div>
+<div class="production-label">произведено за сегодня</div>
+<div class="stats">
+<div class="stat"><div class="stat-value">18</div><div class="stat-label">брак</div></div>
+<div class="stat"><div class="stat-value">1 222</div><div class="stat-label">годных</div></div>
+<div class="stat"><div class="stat-value">2</div><div class="stat-label">машины</div></div>
+</div>
+</div>
+<div class="machines">
+<div class="machine"><div class="machine-name">Velles №1</div><div class="machine-number">650</div><div class="machine-label">штук сегодня</div></div>
+<div class="machine"><div class="machine-name">Velles №2</div><div class="machine-number">590</div><div class="machine-label">штук сегодня</div></div>
+</div>
+</section>
+<section class="page" id="page-production"><div class="page-header"><h1>Производство</h1><p>Ввод результатов производства</p></div><div class="empty-card"><div class="empty-icon">＋</div><div>Форма добавления производства будет здесь.</div></div></section>
+<section class="page" id="page-products"><div class="page-header"><h1>Изделия</h1><p>Справочник изделий и расценок</p></div><div class="product-list">
+<div class="product-card"><div class="product-name">Шеврон «Спецназ»</div><div class="product-type">Шеврон</div><div class="product-rate">12 ₽ / шт.</div></div>
+<div class="product-card"><div class="product-name">Шеврон «МЧС»</div><div class="product-type">Шеврон</div><div class="product-rate">15 ₽ / шт.</div></div>
+<div class="product-card"><div class="product-name">Логотип «Спецназ 22»</div><div class="product-type">Логотип</div><div class="product-rate">8 ₽ / шт.</div></div>
+</div></section>
+<section class="page" id="page-history"><div class="page-header"><h1>История</h1><p>Результаты производства</p></div><div class="history-list">
+<div class="history-card"><div><div class="history-date">30 сентября</div><div class="history-info">Velles №1 · Шеврон «Спецназ»</div></div><div class="history-quantity">650</div></div>
+<div class="history-card"><div><div class="history-date">29 сентября</div><div class="history-info">Velles №2 · Шеврон «МЧС»</div></div><div class="history-quantity">590</div></div>
+</div></section>
+<section class="page" id="page-operators"><div class="page-header"><h1>Операторы</h1><p>Сотрудники производства</p></div><div class="empty-card"><div class="empty-icon">●</div><div>Раздел операторов будет здесь.</div></div></section>
+<section class="page" id="page-salary"><div class="page-header"><h1>Зарплата</h1><p>Начисления и выплаты</p></div><div class="empty-card"><div class="empty-icon">₽</div><div>Раздел зарплаты будет здесь.</div></div></section>
+<section class="page" id="page-analytics"><div class="page-header"><h1>Аналитика</h1><p>Показатели производства</p></div><div class="empty-card"><div class="empty-icon">▥</div><div>Раздел аналитики будет здесь.</div></div></section>
+<section class="page" id="page-audit"><div class="page-header"><h1>Журнал изменений</h1><p>История действий пользователей</p></div><div class="empty-card"><div class="empty-icon">≡</div><div>Журнал изменений будет здесь.</div></div></section>
+<section class="page" id="page-settings"><div class="page-header"><h1>Настройки</h1><p>Настройки системы</p></div><div class="empty-card"><div class="empty-icon">⚙</div><div>Настройки будут здесь.</div></div></section>
+<section class="page" id="page-profile"><div class="page-header"><h1>Профиль</h1><p>Учётная запись</p></div><div class="profile-card"><div class="avatar">●</div><div><div class="profile-name">Пользователь</div><div class="profile-role">Пользователь</div><a href="/logout" class="logout-button">Выйти</a></div></div></section>
+</main>
+</div>
+<script src="/frontend/js/app.js"></script>
+</body>
+</html>
